@@ -18,7 +18,7 @@ string[] MatrixInit(int size)
     for (int i = 0; i < size; i++)
     {
         Console.Write($"Введите {i + 1} элемент массива -> ");
-        matrix[i] = Console.ReadLine();
+        matrix[i] = Console.ReadLine()!;
         Console.WriteLine();
     }
     return matrix;
