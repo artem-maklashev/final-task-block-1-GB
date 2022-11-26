@@ -42,11 +42,13 @@ string[] SortedMatrix(string[] matrix)
 
 void PrintArray(string[] matrix)
 {
+    Console.Write("[");
     for (int i = 0; i < matrix.Length; i++)
     {
         Console.Write(matrix[i]);
         if (i < matrix.Length - 1) Console.Write(", ");
     }
+    Console.Write("]");
 }
 
 int size = GetNumber("Введите размерность массива");
